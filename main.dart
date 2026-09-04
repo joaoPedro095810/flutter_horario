@@ -69,9 +69,58 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String _aula6 = "";
 
-    void _segunda (){
+    void _segunda () {
       setState(() {
-        _aula1 = ""
+        _aula1 = "História 7:10 as 8:00";
+        _aula2 = "História 8:00 as 8:50";
+        _aula3 = "IOT 8:50 as 9:40";
+        _aula4 = "IOT 10:00 as 10:50";
+        _aula5 = "Língua Inglesa 10:50 as 11:40";
+        _aula6 = "Língua Inglesa 11:40 as 12:30";
+  });
+}
+
+    void _terca () {
+      setState(() {
+        _aula1 = "Geografia 7:10 as 8:00";
+        _aula2 = "Geografia 8:00 as 8:50";
+        _aula3 = "Sociologia 8:50 as 9:40";
+        _aula4 = "Língua Portuguesa 10:00 as 10:50";
+        _aula5 = "Língua Portuguesa 10:50 as 11:40";
+        _aula6 = "Matemática 11:40 as 12:30";
+      });
+    }
+
+    void _quarta () {
+      setState(() {
+        _aula1 = "Computação em Nuvem para Web II 7:10 as 8:00";
+        _aula2 = "Computação em Nuvem para Web II 8:00 as 8:50";
+        _aula3 = "Gestão de Conteúdo Web 8:50 as 9:40";
+        _aula4 = "Gestão de Conteúdo Web 10:00 as 10:50";
+        _aula5 = "Usabilidade, Design de Interação e Acessibilidade Digital 10:50 as 11:40";
+        _aula6 = "Usabilidade, Design de Interação e Acessibilidade Digital 11:40 as 12:30";
+      });
+    }
+
+    void _quinta () {
+      setState(() {
+        _aula1 = "Sistemas Web II 7:10 as 8:00";
+        _aula2 = "Sistemas Web II 8:00 as 8:50";
+        _aula3 = "Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso (TCC) 8:50 as 9:40";
+        _aula4 = "Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso (TCC) 10:00 as 10:50";
+        _aula5 = "Língua Portuguesa 10:50 as 11:40";
+        _aula6 = "Filosofia 11:40 as 12:30";
+      });
+    }
+
+    void _sexta () {
+      setState(() {
+        _aula1 = "Matemática 7:10 as 8:00";
+        _aula2 = "Matemática 8:00 as 8:50";
+        _aula3 = "Língua Espanhola 8:50 as 9:40";
+        _aula4 = "Língua Espanhola 10:00 as 10:50";
+        _aula5 = "Desenvolvimento para Dispositivos Móveis II 10:50 as 11:40";
+        _aula6 = "Desenvolvimento para Dispositivos Móveis II 11:40 as 12:30";
       });
     }
 
@@ -122,7 +171,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ElevatedButton(
                     onPressed: _segunda, child: const Text("Seg")),
 
-                  ElevatedButton(onPressed: () {}, child: const Text("Ter")),
+                  ElevatedButton(
+                    onPressed: _terca, child: const Text("Ter")),
+                  ElevatedButton(
+                    onPressed: _quarta, child: const Text("qua")),
+                  ElevatedButton(
+                    onPressed: _quinta, child: const Text("qui")),
+                  ElevatedButton(
+                    onPressed: _sexta, child: const Text("sex")),
                 ],
                ),
             )
